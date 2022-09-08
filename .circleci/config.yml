@@ -25,7 +25,7 @@ jobs:
       - image: circleci/node:latest
     steps:
       - checkout
-      - restore_cache
+      - restore_cache:
           keys: node-module-{{ checksum "mystring" }}
       - run: npm run audit
 workflows:
