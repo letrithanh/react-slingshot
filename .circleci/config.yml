@@ -27,7 +27,7 @@ jobs:
       - checkout
       - restore_cache:
           keys: node-module
-      - run: npm run audit
+      - run: npm audit
 workflows:
   my_flow:
     jobs:
